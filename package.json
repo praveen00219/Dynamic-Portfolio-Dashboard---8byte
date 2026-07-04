@@ -9,6 +9,10 @@
     "start": "next start",
     "lint": "eslint ."
   },
+    "engines": {
+      "node": ">=20.0.0"
+    }
+  ,
   "dependencies": {
     "@tanstack/react-table": "^8.21.3",
     "cheerio": "^1.2.0",
