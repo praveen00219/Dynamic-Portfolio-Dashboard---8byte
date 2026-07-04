@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Design tokens (light theme) — categorical hexes validated with the palette validator (worst adjacent CVD dE 24.2), mirrored in src/lib/palette.ts. */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+
+  /* surfaces & ink */
+  --color-plane: #f9f9f7; /* page background */
+  --color-surface: #fcfcfb; /* card / chart surface */
+  --color-ink: #0b0b0b;
+  --color-ink-secondary: #52514e;
+  --color-ink-muted: #898781;
+  --color-grid: #e1e0d9; /* hairline gridlines / row dividers */
+  --color-baseline: #c3c2b7;
+
+  /* gain / loss (status roles — reserved, never used as series colors) */
+  --color-gain: #006300; /* success text on light surface (WCAG ≥ 4.5:1) */
+  --color-gain-mark: #0ca30c; /* success mark fill (bars, dots) */
+  --color-loss: #d03b3b; /* critical — passes as text and mark */
+  --color-warn: #fab219;
+
+  /* categorical series — sectors, fixed slot order, never re-assigned */
+  --color-cat-1: #2a78d6;
+  --color-cat-2: #1baf7a;
+  --color-cat-3: #eda100;
+  --color-cat-4: #008300;
+  --color-cat-5: #4a3aa7;
+  --color-cat-6: #e34948;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-plane text-ink antialiased;
+}
+
+/* Numeric columns align vertically with tabular figures */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hairline ring used by cards and table container */
+.hairline {
+  border: 1px solid rgb(11 11 11 / 0.1);
+}

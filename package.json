@@ -1,0 +1,32 @@
+{
+  "name": "dynamic-portfolio-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dynamic Portfolio Dashboard — live CMP from Yahoo Finance, P/E & earnings from Google Finance. Next.js + TypeScript + Tailwind CSS + Node.js.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@tanstack/react-table": "^8.21.3",
+    "cheerio": "^1.2.0",
+    "next": "^16.2.10",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "recharts": "^3.9.2",
+    "swr": "^2.4.2",
+    "yahoo-finance2": "^3.15.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.2",
+    "@types/node": "^26.1.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "^16.2.10",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  }
+}
